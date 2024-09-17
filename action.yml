@@ -1,0 +1,24 @@
+name: "Accelario Virtualisation start VDB"
+description: "Accelario Virtualisation start VDB"
+author: "accelario"
+inputs:
+  name:
+    description: "Please feel variables"
+    required: false
+    default: ""
+runs:
+  using: "composite"
+  steps:
+    - name: Start_VDB
+      shell: bash
+      run: ./start_vdb.sh
+      env:
+        VIRTUALIZATION_IP: ${{ env.VIRTUALIZATION_IP }}
+        TGT_HOME_ID: ${{ env.TGT_HOME_ID }}
+        SNAPSHOT_ID: ${{ env.SNAPSHOT_ID }}
+        VIRTUALIZATION_LOGIN: ${{ env.VIRTUALIZATION_LOGIN }}
+        VIRTUALIZATION_PASSWORD: ${{ env.VIRTUALIZATION_PASSWORD }}
+
+branding:
+  icon: "terminal"
+  color: "pyrple"
