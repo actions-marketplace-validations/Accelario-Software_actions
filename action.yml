@@ -3,7 +3,7 @@ description: "Accelario Virtualisation start VDB"
 author: "accelario"
 inputs:
   name:
-    description: "Please feel variables"
+    description: "Fill all the variables"
     required: false
     default: ""
 runs:
@@ -37,5 +37,5 @@ runs:
 
 
 branding:
-  icon: "terminal"
-  color: "pyrple"
+  icon: "database"
+  color: "purple"
