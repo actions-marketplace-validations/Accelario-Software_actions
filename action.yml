@@ -1,9 +1,9 @@
-name: "Accelario Virtualisation start VDB"
-description: "Accelario Virtualisation start VDB"
+name: "Accelario Virtualization create VDB"
+description: "Accelario Virtualization create VDB"
 author: "accelario"
 inputs:
   name:
-    description: "Please feel variables"
+    description: "Fill all the variables"
     required: false
     default: ""
 runs:
@@ -20,5 +20,5 @@ runs:
         VIRTUALIZATION_PASSWORD: ${{ env.VIRTUALIZATION_PASSWORD }}
 
 branding:
-  icon: "terminal"
+  icon: "database"
   color: "purple"
